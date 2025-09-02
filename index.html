@@ -5,126 +5,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nivetha S | Project Manager Resume Portfolio</title>
   
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
   <style>
+    /* Reset and base styles */
     * { margin:0; padding:0; box-sizing:border-box; }
     body { 
-      background:linear-gradient(135deg, #e0f7fa, #b2ebf2); 
-      color:#333; 
-      line-height:1.6; 
-      overflow-x:hidden; 
-      font-family:'Roboto', sans-serif; 
-      font-size:16px; /* default readable font */
+      background: linear-gradient(135deg, #e0f7fa, #b2ebf2); 
+      font-family: 'Roboto', sans-serif; 
+      color: #333; 
+      line-height: 1.6; 
+      font-size: 16px; 
+      overflow-x: hidden;
     }
 
+    /* Header */
     header { 
-      background:linear-gradient(135deg, #1a1a2e, #16213e); 
-      color:#fff; 
-      padding:40px 20px; 
-      display:flex; 
-      align-items:center; 
-      justify-content:center; 
-      gap:30px; 
+      background: linear-gradient(135deg, #1a1a2e, #16213e); 
+      color: #fff; 
+      padding: 40px 20px; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      gap: 30px; 
       flex-wrap: wrap;
     }
     .profile-pic { 
-      width:180px;  /* slightly smaller for balance */
-      height:180px; 
-      border-radius:50%; 
-      object-fit:cover; 
-      border:5px solid #ff4081; 
-      animation:zoomIn 1.5s ease-in-out; 
+      width: 180px; 
+      height: 180px; 
+      border-radius: 50%; 
+      object-fit: cover; 
+      border: 5px solid #ff4081; 
+      animation: zoomIn 1.5s ease-in-out;
     }
-    .header-text { 
-      animation:fadeIn 1.5s ease-in-out; 
-      text-align:center;
-    }
+    .header-text { text-align: center; animation: fadeIn 1.5s ease-in-out; }
     .header-text h1 { 
-      font-family:'Playfair Display', serif; 
-      font-size:32px; 
-      color:#ff4081; 
-      margin-bottom:8px; 
+      font-family: 'Playfair Display', serif; 
+      font-size: 32px; 
+      color: #ff4081; 
+      margin-bottom: 8px; 
     }
-    .header-text p { 
-      font-size:18px; 
-    }
+    .header-text p { font-size: 18px; }
 
+    /* Sections */
     section { 
-      padding:50px 20px; 
-      max-width:900px; 
-      margin:auto; 
-      animation:fadeIn 1.5s ease-in-out; 
+      padding: 50px 20px; 
+      max-width: 900px; 
+      margin: auto; 
+      animation: fadeIn 1.5s ease-in-out; 
     }
     section h2 { 
-      font-family:'Playfair Display', serif; 
-      font-size:28px; 
-      color:#1a1a2e; 
-      margin-bottom:15px; 
-      text-align:center; 
-      position:relative; 
+      font-family: 'Playfair Display', serif; 
+      font-size: 28px; 
+      color: #1a1a2e; 
+      margin-bottom: 15px; 
+      text-align: center; 
+      position: relative; 
     }
     section h2::after { 
-      content:''; 
-      display:block; 
-      width:60px; 
-      height:3px; 
-      background:#ff4081; 
-      margin:10px auto 0; 
-      border-radius:5px; 
+      content: ''; 
+      display: block; 
+      width: 60px; 
+      height: 3px; 
+      background: #ff4081; 
+      margin: 10px auto 0; 
+      border-radius: 5px; 
     }
 
+    /* Resume blocks */
     .resume-block { 
-      background:#f3e5f5; 
-      padding:20px; 
-      margin-bottom:20px; 
-      border-radius:15px; 
-      box-shadow:0 6px 20px rgba(0,0,0,0.1); 
-      transition:transform 0.3s ease, box-shadow 0.3s ease; 
+      background: #f3e5f5; 
+      padding: 20px; 
+      margin-bottom: 20px; 
+      border-radius: 15px; 
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1); 
+      transition: transform 0.3s ease, box-shadow 0.3s ease; 
     }
     .resume-block:hover { 
-      transform:translateY(-5px); 
-      box-shadow:0 10px 25px rgba(0,0,0,0.15); 
+      transform: translateY(-5px); 
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
     }
     .resume-block h3 { 
-      color:#ff4081; 
-      margin-bottom:10px; 
-      font-family:'Playfair Display', serif; 
-      font-size:20px; 
+      font-family: 'Playfair Display', serif; 
+      font-size: 20px; 
+      color: #ff4081; 
+      margin-bottom: 10px; 
     }
-    .resume-block p, .resume-block li { 
-      font-size:16px; 
-    }
-    ul { margin-left:20px; }
+    .resume-block p, .resume-block li { font-size: 16px; }
+    ul { margin-left: 20px; }
 
-    .contact { 
-      text-align:center; 
-      font-size:16px; 
-    }
+    /* Contact section */
+    .contact { text-align: center; font-size: 16px; }
 
+    /* Footer */
     footer { 
-      background:#16213e; 
-      color:#fff; 
-      text-align:center; 
-      padding:25px; 
-      margin-top:40px; 
+      background: #16213e; 
+      color: #fff; 
+      text-align: center; 
+      padding: 25px; 
+      margin-top: 40px; 
     }
     footer a { 
-      color:#ff4081; 
-      margin:0 12px; 
-      text-decoration:none; 
-      transition:color 0.3s; 
-      font-size:16px;
+      color: #ff4081; 
+      margin: 0 12px; 
+      text-decoration: none; 
+      transition: color 0.3s; 
+      font-size: 16px; 
     }
-    footer a:hover { 
-      color:#fff; 
-    }
+    footer a:hover { color: #fff; }
 
     /* Animations */
-    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-    @keyframes zoomIn { from { opacity:0; transform:scale(0.5); } to { opacity:1; transform:scale(1); } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes zoomIn { from { opacity: 0; transform: scale(0.5); } to { opacity: 1; transform: scale(1); } }
   </style>
 </head>
 <body>
+
+  <!-- Header -->
   <header>
     <object data="photo.jpg" type="image/jpg" class="profile-pic"></object>
     <div class="header-text">
@@ -133,6 +131,7 @@
     </div>
   </header>
 
+  <!-- Profile Summary -->
   <section>
     <h2>Profile Summary</h2>
     <div class="resume-block">
@@ -140,6 +139,7 @@
     </div>
   </section>
 
+  <!-- Education -->
   <section>
     <h2>Education</h2>
     <div class="resume-block">
@@ -150,6 +150,7 @@
     </div>
   </section>
 
+  <!-- Experience -->
   <section>
     <h2>Experience</h2>
     <div class="resume-block">
@@ -170,6 +171,7 @@
     </div>
   </section>
 
+  <!-- Skills -->
   <section>
     <h2>Skills</h2>
     <div class="resume-block">
@@ -184,6 +186,7 @@
     </div>
   </section>
 
+  <!-- Projects -->
   <section>
     <h2>Projects</h2>
     <div class="resume-block">
@@ -196,6 +199,7 @@
     </div>
   </section>
 
+  <!-- Contact -->
   <section class="contact">
     <h2>Contact</h2>
     <p>Email: nivethas@example.com</p>
@@ -203,6 +207,7 @@
     <p>Location: Coimbatore, India</p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Nivetha S | Resume Portfolio</p>
     <div>
@@ -211,182 +216,6 @@
       <a href="#">Twitter</a>
     </div>
   </footer>
+
 </body>
-</html></head>
-<body>
-  <header>
-    
-    <object data="photo.jpg" type="image/jpg" class="profile-pic"></object>
-    <div class="header-text">
-      <h1>Nivetha S</h1>
-      <p>Project Manager | Agile Practitioner | Team Leader</p>
-    </div>
-  </header>
-
-  <section>
-    <h2>Profile Summary</h2>
-    <div class="resume-block">
-      <p>Highly motivated Project Manager with 5+ years of experience in leading cross-functional teams and delivering complex IT and business projects. Skilled in Agile & Scrum methodologies, risk management, and strategic planning. Adept at stakeholder communication and ensuring projects align with organizational goals.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <div class="resume-block">
-      <h3>MBA in Project Management</h3>
-      <p>Oxford University | 2020</p>
-      <h3>Bachelor of Science in Artificial Intelligence and Machine Learning</h3>
-      <p>KPRCAS | 2018</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Experience</h2>
-    <div class="resume-block">
-      <h3>Senior Project Manager – Tech Solutions Pvt Ltd (2021 – Present)</h3>
-      <ul>
-        <li>Led ERP software implementation across 4 departments, improving efficiency by 40%.</li>
-        <li>Managed a team of 15+ to launch a successful mobile application with 50,000+ downloads.</li>
-        <li>Implemented Agile practices, reducing project delivery time by 25%.</li>
-      </ul>
-    </div>
-    <div class="resume-block">
-      <h3>Project Coordinator – Bright Future IT (2018 – 2021)</h3>
-      <ul>
-        <li>Assisted in managing cloud migration projects for enterprise clients.</li>
-        <li>Facilitated communication between clients and development teams to ensure quality deliverables.</li>
-        <li>Prepared project documentation, progress reports, and risk assessments.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>Skills</h2>
-    <div class="resume-block">
-      <ul>
-        <li>Agile & Scrum Methodologies</li>
-        <li>Risk Management</li>
-        <li>Team Leadership & Collaboration</li>
-        <li>Client & Stakeholder Communication</li>
-        <li>Strategic Planning & Scheduling</li>
-        <li>Problem Solving & Decision Making</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>Projects</h2>
-    <div class="resume-block">
-      <h3>ERP Implementation</h3>
-      <p>Directed ERP system rollout across multiple departments, reducing manual work and boosting productivity.</p>
-      <h3>Digital Transformation Initiative</h3>
-      <p>Coordinated transition of businesses to cloud platforms, improving scalability and operational efficiency.</p>
-      <h3>Mobile App Launch</h3>
-      <p>Managed development and launch of e-commerce mobile app, achieving rapid market adoption.</p>
-    </div>
-  </section>
-
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: nivethagayu8@gmail.com</p>
-    <p>Phone: +91 XXXXX 356266</p>
-    <p>Location: Coimbatore, India</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Nivetha S | Resume Portfolio</p>
-    <div>
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
-      <a href="#">Twitter</a>
-    </div>
-  </footer>
-</body>
-</html></head>
-<body>
-  <header>
-    <h1>Nivetha S</h1>
-    <p>Project Manager | Agile Practitioner | Team Leader</p>
-    <object data="photo.jpg" type="image/jpg" class="profile-pic"></object>
-  </header>
-
-  <section>
-    <h2>Profile Summary</h2>
-    <div class="resume-block">
-      <p>Highly motivated Project Manager with 5+ years of experience in leading cross-functional teams and delivering complex IT and business projects. Skilled in Agile & Scrum methodologies, risk management, and strategic planning. Adept at stakeholder communication and ensuring projects align with organizational goals.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <div class="resume-block">
-      <h3>MBA in Project Management</h3>
-      <p>Oxward University | 2020</p>
-      <h3>Bachelor of Science in Artificial Intelligence And Machine Learning</h3>
-      <p>KPRCAS | 2018</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Experience</h2>
-    <div class="resume-block">
-      <h3>Senior Project Manager – Tech Solutions Pvt Ltd (2021 – Present)</h3>
-      <ul>
-        <li>Led ERP software implementation across 4 departments, improving efficiency by 40%.</li>
-        <li>Managed a team of 15+ to launch a successful mobile application with 50,000+ downloads.</li>
-        <li>Implemented Agile practices, reducing project delivery time by 25%.</li>
-      </ul>
-    </div>
-    <div class="resume-block">
-      <h3>Project Coordinator – Bright Future IT (2018 – 2021)</h3>
-      <ul>
-        <li>Assisted in managing cloud migration projects for enterprise clients.</li>
-        <li>Facilitated communication between clients and development teams to ensure quality deliverables.</li>
-        <li>Prepared project documentation, progress reports, and risk assessments.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>Skills</h2>
-    <div class="resume-block">
-      <ul>
-        <li>Agile & Scrum Methodologies</li>
-        <li>Risk Management</li>
-        <li>Team Leadership & Collaboration</li>
-        <li>Client & Stakeholder Communication</li>
-        <li>Strategic Planning & Scheduling</li>
-        <li>Problem Solving & Decision Making</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>Projects</h2>
-    <div class="resume-block">
-      <h3>ERP Implementation</h3>
-      <p>Directed ERP system rollout across multiple departments, reducing manual work and boosting productivity.</p>
-      <h3>Digital Transformation Initiative</h3>
-      <p>Coordinated transition of businesses to cloud platforms, improving scalability and operational efficiency.</p>
-      <h3>Mobile App Launch</h3>
-      <p>Managed development and launch of e-commerce mobile app, achieving rapid market adoption.</p>
-    </div>
-  </section>
-
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: nivethas@example.com</p>
-    <p>Phone: +91 98765 43210</p>
-    <p>Location: Coimbatore, India</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Nivetha S | Resume Portfolio</p>
-    <div>
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
-      <a href="#">Twitter</a>
-    </div>
-  </footer>
-</body>
-</html>
+    </html>
